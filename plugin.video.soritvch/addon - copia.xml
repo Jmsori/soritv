@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon 
+    id="plugin.video.soritvch"
+    name="[COLOR blue]Sori[/COLOR] [COLOR red]Channel TV[/COLOR]"
+    version="1.0.0"
+    provider-name="soritvch">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="plugin.video.youtube" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Sori Channel TV</summary>
+        <description lang="en">Watch online several videos (spanish)[CR] By [COLOR gold]jsori[/COLOR]</description>
+        <summary lang="es">Sori Channel TV</summary>
+        <description lang="es">Todos los vídeos online en Español[CR]Por [COLOR purple]jsori[/COLOR]</description>
+        <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+        <disclaimer lang="es">Algunas partes de este addon podrían no ser legales en tu país de residencia - por favor comprueba las leyes de tu país antes de su instalación.</disclaimer>
+        <website>[COLOR yellow][B]http://www.[/B][/COLOR]</website>
+        <license>GPL 2.0</license>
+        <platform>all</platform>
+    </extension>
+</addon>
