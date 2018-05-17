@@ -175,79 +175,11 @@ def main_list(params):
         folder=True)
 
     plugintools.add_item(
-        action="ohpelis_playlists",
-        title="Oh-Pelis",
-        thumbnail="http://www.ohpelis.com/wp-content/uploads/2017/07/logo8.png",
-        url="http://www.ohpelis.com",
-        isPlayable=False,
-        folder=True)
-
-    plugintools.add_item(
         action="pelismundo_playlists",
         title="Pelismundo",
         thumbnail="http://www.pelismundo.com/wp-content/uploads/2015/08/logo.png",
         url="http://www.pelismundo.com/",
         isPlayable=False,
-        folder=True)
-
-    #plugintools.add_item( action="search",
-    #    title=plugintools.get_localized_string(T_SEARCH) )
-
-    plugintools.add_item(
-        action="arenavision_playlists",
-        title=plugintools.get_localized_string(T_ARENAVISION),
-        thumbnail="http://arenavision.in/sites/default/files/FAVICON_AV2015.png",
-        url="",
-        isPlayable=False,
-        folder=True)
-
-    plugintools.add_item(
-        action="dbsowo_playlists",
-        title=plugintools.get_localized_string(T_DBSOWO),
-        thumbnail="http://cm1.narvii.com/6545/9c98445673df95e56b6430d8c563a7a2a7a62524_120.jpg",
-        url="",
-        folder=True)
-
-    plugintools.add_item(
-        action="ororotv_playlists",
-        title=plugintools.get_localized_string(T_OROROTV),
-        thumbnail="https://pp.vk.me/c624919/v624919176/72f6/UuzaQbWLjbk.jpg",
-        url="https://ororo.tv/es",
-        folder=True)
-
-    plugintools.add_item( 
-        action="disneyweb", 
-        title=plugintools.get_localized_string(T_OFFICIAL_WEBSITE),
-        thumbnail="https://static-mh.content.disney.io/matterhorn/assets/logos/nav_logo-89193ebe6563.png",
-        url="http://www.disney.es/disney-junior/contenido/video.jsp",
-        folder=True)
-    
-    plugintools.add_item(
-        action="youtube_playlists",
-        title=plugintools.get_localized_string(T_YOUTUBE_CHANNEL),
-        thumbnail="https://www.youtube.com/yts/img/yt_1200-vfl4C3T0K.png",
-        url="http://gdata.youtube.com/feeds/api/users/"+YOUTUBE_CHANNEL_ID+"/playlists?v=2&start-index=1&max-results=30",
-        folder=True)
-
-    plugintools.add_item(
-        action="laligatv_playlists",
-        title=plugintools.get_localized_string(T_LALIGATV),
-        thumbnail="http://files.laliga.es/201402/855x481_06172611noticia-la-liga-tv.es.jpg",
-        url="http://www.lfp.es/laligatv",
-        folder=True)
-    
-    plugintools.add_item(
-        action="livefootballol_playlists",
-        title=plugintools.get_localized_string(T_SOPCASTLIST),
-        thumbnail="http://www.livefootballol.me/images/logo.png",
-        url="http://www.livefootballol.com/sopcast-channel-list.html",
-        folder=True)
-        
-    plugintools.add_item(
-        action="seriesnovelas_playlists",
-        title=plugintools.get_localized_string(T_SERIESNOVELAS),
-        thumbnail="http://www.verseriesynovelas.com/wp-content/themes/maco/css/images/logo-verseriesynovelas.com.png",
-        url="",
         folder=True)
 
     plugintools.add_item(
@@ -257,6 +189,32 @@ def main_list(params):
         isPlayable=False,
         folder = False )
 
+#    plugintools.add_item(
+#        action="misc_playlists",
+#        title="Misc",
+#        thumbnail="http://www.pelismundo.com/wp-content/uploads/2015/08/logo.png",
+#        url="http://www.pelismundo.com/",
+#        isPlayable=False,
+#        folder=False)
+
+
+def misc_playlists(params):
+    plugintools.log("misc_playlists")
+    request_headers=[]
+    request_headers.append(["User-Agent","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"])
+    request_headers.append(["referrer","https://linkotes.com/arenavision/' -H 'X-Requested-With: XMLHttpRequest' -H 'Connection: keep-alive' --data 'id=32&nocatxe=0' --compressed"])
+    #url = params.get("url")
+    url = "https://linkotes.com/arenavision/aj_canal.php"
+    try:
+        #data,response_headers = plugintools.read_body_and_headers(url, headers=request_headers)
+        #data = plugintools.read(url)
+        data = plugintools.read("https://linkotes.com/arenavision/aj_canal.php?id=32&nocatxe=0")
+    except:
+        data="";xbmcgui.Dialog().ok("Error","\nFallo al obtener la información de:","\n"+url)
+        plugintools.log("ERROR - Fallo al obtener la información de:","\n"+url)
+        return
+    plugintools.log("data="+str(data))
+    xbmcgui.Dialog().ok("Error",data)
 
 # Show all videos from the official website
 def disneyweb(params):
@@ -265,7 +223,7 @@ def disneyweb(params):
 
     # Fetch video list from YouTube feed
     data = plugintools.read( params.get("url") )
-    data = plugintools.find_single_match( data , '<div id="video_main_promos_inner">(.*?)<div id="content_index_navigation">')
+    data = plugintools.find_single_match(data , '<div id="video_main_promos_inner">(.*?)<div id="content_index_navigation">')
     
     # Extract items from feed
     '''
@@ -833,27 +791,6 @@ def seriesnovelas_playlists(params):
         url="http://www.verseriesynovelas.com/archivos/nuevo",
         folder=True)
 
-def arenavision_playlists(params):
-    plugintools.add_item(
-        action="arenavision_playlists_agenda",
-        title="Agenda de Eventos",
-        thumbnail="http://arenavision.in/sites/default/files/FAVICON_AV2015.png",
-        url="http://arenavision.in/iguide/",
-        folder=True)
-
-    plugintools.add_item(
-        action="arenavision_playlists_canales_ace",
-        title="Canales AceStream",
-        thumbnail="http://arenavision.in/sites/default/files/FAVICON_AV2015.png",
-        url="http://arenavision.in/",
-        folder=True)
-
-    plugintools.add_item(
-        action="arenavision_playlists_canales_sop",
-        title="Canales SopCast",
-        thumbnail="http://arenavision.in/sites/default/files/FAVICON_AV2015.png",
-        url="http://arenavision.in/",
-        folder=True)
 
 def adelante_geturl(params):
     plugintools.log("soritvch.LaLigatv.es getURL: "+repr(params))
