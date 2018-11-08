@@ -27,6 +27,7 @@ from resources.tools.channels import *
 from resources.tools.vercanalestv import *
 from resources.tools.pelismundo import *
 from resources.tools.dbsuper import *
+from resources.tools.ulises31 import *
 
 # YouTube channel shown (preferences)
 YOUTUBE_CHANNEL_ID = plugintools.get_setting("youtube_channel_id")
@@ -139,6 +140,9 @@ def main_list(params):
         title="Recetas Lidl",
         thumbnail="https://www.lidl.es/statics/lidl-offering-es/ds_img/assets_600_x/opengraph-320x240-S13-lodolidl.jpg",
         url="https://www.lidl.es/es/recetas.htm?ar=1",
+        isPlayable=False,
+        folder=True)
+
         isPlayable=False,
         folder=True)
 
