@@ -143,6 +143,11 @@ def main_list(params):
         isPlayable=False,
         folder=True)
 
+    plugintools.add_item(
+        action="Ulises31_playlists",
+        title="Ulises 31",
+        thumbnail="https://i.ytimg.com/vi/RC9CkPqB3MY/hqdefault.jpg",
+        url="",
         isPlayable=False,
         folder=True)
 
@@ -191,7 +196,7 @@ def main_list(params):
         title=plugintools.get_localized_string(T_PREFERENCES),
         thumbnail=os.path.join(addonDir, "resources", "images", "icon.png"),
         isPlayable=False,
-        folder = False )
+        folder = False)
 
 #    plugintools.add_item(
 #        action="misc_playlists",
