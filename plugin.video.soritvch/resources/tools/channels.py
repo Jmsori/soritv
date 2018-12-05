@@ -90,7 +90,7 @@ def esport3_playlists(params):
 
 def GiTV_playlists(params):
     #url = 'rtmp://tvgirona.dnssw.net/live/<playpath>Icontouch <swfUrl>http://p.jwpcdn.com/6/12/jwplayer.flash.swf <pageUrl>http://www.tvgirona.cat/playertvgirona/playertvgirona.htm'
-    url = "rtmp://tvgirona.dnssw.net/live/Icontouch"
+    url = 'http://ventdelnord.tv:8080/girona/directe.m3u8'
     plugintools.play_resolved_url( url )
 
 
