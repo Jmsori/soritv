@@ -1,0 +1,5 @@
+soritvch 0.1beta by jsori
+
+- Versión inicial
+- Muchísimos errores ;)
+

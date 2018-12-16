@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="General">
+        <setting id="youtube_channel_id" type="text" option="writeable" label="30006" default="DisneyJuniorES"/>
+        <setting id="youtube_language" type="text" option="writeable" label="30007" default="es"/>
+        <setting id="last_search" type="text" option="writeable" label="30001" default="la casa de mickey mouse"/>
+    </category>
+    <category label="30004">
+        <!--<setting id="last" type="text" option="writeable" label="40001" default="es"/>-->
+        <setting id="sch_lng" type="labelenum" label="40001" values="Español|Català|English" default="Español"/>
+        <setting id="sch_movie" type="bool" label="40002" default="true"/>
+    </category>
+</settings>

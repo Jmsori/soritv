@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+    <!-- Titulos 30000 -->
+    <string id="30001">Última búsqueda</string>
+    <string id="30002">Web oficial Disney [COLOR red](obsoleto)[/COLOR]</string>
+    <string id="30003">Canal de YouTube [COLOR red](obsoleto)[/COLOR]</string>
+    <string id="30004">Buscar</string>
+    <string id="30005">Configuración</string>
+    <string id="30006">ID del canal de YouTube ...</string>
+    <string id="30007">Idioma para los resultados del buscador</string>
+    <string id="30008">LaLigaTV [COLOR red](obsoleto)[/COLOR]</string>
+    <string id="30009">livefootballol Sopcast [COLOR red](obsoleto)[/COLOR]</string>
+    <string id="30010">Seriesynovelas [COLOR red](obsoleto)[/COLOR]</string>
+    <string id="30011">Arenavision</string>
+    <string id="30012">Esport3</string>
+    <string id="30013">Dragon Ball Super [COLOR blue](dbsowo.com) [/COLOR][COLOR red](obsoleto)[/COLOR]</string>
+    <string id="30014">Ororo.tv [COLOR red](obsoleto)[/COLOR]</string>
+    <string id="30015">Dragon Ball Super mx</string>
+    <!-- Textos dentro de los Titulos 30000. Ej. Si el id es 30009 pues 39001 -->
+    <string id="39001">Actualizado:</string>
+    <!-- Textos para los settings -->
+    <string id="40001">Idioma</string>
+    <string id="40002">Buscar 'película'</string>
+    <!-- Textos para los caption (dialogbox) -->
+    <string id="50001">Atención</string> <!-- Texto cabecera ventana -->
+    <string id="50002">Acción cancelada por el usuario.</string> <!-- Texto interior ventana -->
+    <string id="50003">Sin resultados.</string> <!-- Texto interior ventana -->
+    <string id="50004">Password incorrecto.</string> <!-- Texto interior ventana -->
+    <string id="50005">Tenga paciencia puede durar varios segundos.</string> <!-- Texto interior ventana -->
+</strings>
+
