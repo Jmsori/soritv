@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.soritvch" name="[COLOR blue]Sori[/COLOR] [COLOR red]Channel TV[/COLOR]" version="1.0.2" provider-name="soritvch">
+<addon id="plugin.video.soritvch" name="[COLOR blue]Sori[/COLOR] [COLOR red]Channel TV[/COLOR]" version="1.0.3" provider-name="soritvch">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="plugin.video.youtube" version="3.0.0"/>
