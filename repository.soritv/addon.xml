@@ -3,7 +3,7 @@
     <extension point="xbmc.addon.repository" name="Soritv  Repository">
         <info>https://raw.githubusercontent.com/Jmsori/soritv/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/Jmsori/soritv/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/Jmsori/master/soritv</datadir>
+        <datadir zip="true">https://raw.githubusercontent.com/Jmsori/soritv/master</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>soritv repository</summary>
