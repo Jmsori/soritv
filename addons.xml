@@ -18,7 +18,7 @@
             <screenshot>resources/images/3.jpg</screenshot>
             <screenshot>resources/images/4.jpg</screenshot>
         </assets>
-        <news>[B]Estos son los cambios para esta versión:[/B]<br>- Se ha añadido Ulises 31.
+        <news>[B]Estos son los cambios para esta versión:[/B]
         </news>
         <description lang="en">Watch online several videos (spanish)[CR] By [COLOR gold]jsori[/COLOR]</description>
         <summary lang="es">Sori Channel TV</summary>
@@ -33,6 +33,9 @@
         <email>my@email.com</email>
         <source>source</source>
     </extension>
+
+
+<addon id="repository.soritv" name="[COLOR blue]SoriTV [/COLOR][COLOR white] Repository [/COLOR]" version="1.0.0" provider-name="Jmsori">
     <extension point="xbmc.addon.repository" name="Soritv  Repository">
         <info>https://raw.githubusercontent.com/Jmsori/soritv/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/Jmsori/soritv/master/addons.xml.md5</checksum>
@@ -44,6 +47,10 @@
 		<disclaimer></disclaimer>
         <platform>all</platform>
     </extension>
+</addon>
+
+
+
 </addon>
 
 <addon id="repository.soritv" name="[COLOR blue]SoriTV [/COLOR][COLOR white] Repository [/COLOR]" version="1.0.0" provider-name="Jmsori">
