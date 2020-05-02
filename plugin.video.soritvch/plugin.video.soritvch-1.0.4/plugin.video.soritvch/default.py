@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 #------------------------------------------------------------
-# XBMC Add-on for Disney Junior
-# Version 1.0.0
+# XBMC Add-on for soritv
+# Version 1.0.4
 #------------------------------------------------------------
 # License: GPL (http://www.gnu.org/licenses/gpl-3.0.html)
 # Based on code from youtube addon
 #------------------------------------------------------------
 # Changelog:
-# 1.0.0
+# 1.0.4
 # - First release
 #---------------------------------------------------------------------------
 
