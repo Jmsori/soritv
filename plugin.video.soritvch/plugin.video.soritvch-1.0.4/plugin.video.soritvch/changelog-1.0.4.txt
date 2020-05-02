@@ -1,4 +1,4 @@
-soritvch 0.1beta by jsori
+soritvch 1.0.4 by jsori
 
 - Versión inicial
 - Muchísimos errores ;)
