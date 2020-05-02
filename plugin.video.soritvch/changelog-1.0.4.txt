@@ -1,4 +1,4 @@
-﻿soritvch 1.0.3 by jsori
+﻿soritvch 1.0.4 by jsori
 
 - Versión inicial
 - Muchísimos errores ;)
